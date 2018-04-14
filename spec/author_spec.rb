@@ -1,5 +1,6 @@
 require "spec_helper"
 require 'pry'
+require 'byebug'
 
 describe "Author" do
 
@@ -46,7 +47,6 @@ describe "Author" do
 
     describe ".post_count" do 
       it "is a class method that returns the total number of posts associated to all existing authors" do 
-        # binding.pry
         expect(Author.post_count).to eq(2)
       end
 
